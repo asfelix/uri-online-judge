@@ -8,10 +8,10 @@ Saída
 Imprima o número e o salário do funcionário, conforme exemplo fornecido, com um espaço em branco antes e depois da igualdade. No caso do salário, também deve haver um espaço em branco após o $.
 '''
 
-id = int(input('número do funcionário: '))
-hours = int(input('horas trabalhadas: '))
-value = float(input('valor da hora: '))
+id = int(input(''))
+hours = int(input(''))
+value = float(input(''))
 
 salario = hours * value
 
-print('NUMBER = {}\nSALARY = U$ {:.2f}\n' .format(id, salario))
+print('NUMBER = {}\nSALARY = U$ {:.2f}' .format(id, salario))
