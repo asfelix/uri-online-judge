@@ -18,6 +18,6 @@ line2 = input().split(' ')
 p1 = float(line1[0]), float(line1[1])
 p2 = float(line2[0]), float(line2[1])
 
-distancia = sqrt(((p2[0] - p1[0]) ** 2) + ((p2[1] - p1[1]) ** 2))
+distancia: float = sqrt(((p2[0] - p1[0]) ** 2) + ((p2[1] - p1[1]) ** 2))
 
 print('{:.4f}' .format(distancia))

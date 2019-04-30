@@ -13,4 +13,4 @@ vel_media = int(input())
 distancia = vel_media * tempo
 consumo = distancia / 12
 
-print('{:.3f}' .format(consumo))
+print('{:.3f}'.format(consumo))
