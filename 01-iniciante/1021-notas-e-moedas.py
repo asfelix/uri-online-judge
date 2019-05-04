@@ -15,30 +15,51 @@ Obs: Utilize ponto (.) para separar a parte decimal.
 
 valor = float(input())
 
-n100 = valor // 100
-n50 = (valor % 100) // 50
-n20 = (valor - ((n100 * 100) + (n50 * 50))) // 20
-n10 = ((valor - ((n100 * 100) + (n50 * 50))) % 20) // 10
-n5 = (((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) // 5
-n2 = ((((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) % 5) // 2
-m1 = (((((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) % 5) % 2) // 1
-m50 = (((((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) % 5) % 1) // .5
-m25 = ((((((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) % 5) % 1) % .5) // .25
-m10 = (((((((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) % 5) % 1) % .5) % .25) // .1
-m05 = ((((((((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) % 5) % 1) % .5) % .25) % .1) // .05
-m01 = (((((((((valor - ((n100 * 100) + (n50 * 50))) % 20) % 10) % 5) % 1) % .5) % .25) % .1) % .05) // .01
-
 print('NOTAS:')
+n100 = valor // 100
 print('{:.0f} nota(s) de R$ 100.00'.format(n100))
+
+valor = valor - (n100 * 100)
+n50 = valor // 50
 print('{:.0f} nota(s) de R$ 50.00'.format(n50))
+
+valor = valor - (n50 * 50)
+n20 = valor // 20
 print('{:.0f} nota(s) de R$ 20.00'.format(n20))
+
+valor = valor - (n20 * 20)
+n10 = valor // 10
 print('{:.0f} nota(s) de R$ 10.00'.format(n10))
+
+valor = valor - (n10 * 10)
+n5 = valor // 5
 print('{:.0f} nota(s) de R$ 5.00'.format(n5))
+
+valor = valor - (n5 * 5)
+n2 = valor // 2
 print('{:.0f} nota(s) de R$ 2.00'.format(n2))
+
 print('MOEDAS:')
+valor = valor - (n2 * 2)
+m1 = valor // 1
 print('{:.0f} moeda(s) de R$ 1.00'.format(m1))
+
+valor = valor - (m1 * 1)
+m50 = valor // .5
 print('{:.0f} moeda(s) de R$ 0.50'.format(m50))
+
+valor = valor - (m50 * .5)
+m25 = valor // .25
 print('{:.0f} moeda(s) de R$ 0.25'.format(m25))
+
+valor = valor - (m25 * .25)
+m10 = valor // .1
 print('{:.0f} moeda(s) de R$ 0.10'.format(m10))
-print('{:.0f} moeda(s) de R$ 0.05'.format(m05))
+
+valor = valor - (m10 * .10)
+m5 = valor // .05
+print('{:.0f} moeda(s) de R$ 0.05'.format(m5))
+
+valor = valor - (m5 * .05)
+m01 = valor // .01
 print('{:.0f} moeda(s) de R$ 0.01'.format(m01))
