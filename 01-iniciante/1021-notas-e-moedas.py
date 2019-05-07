@@ -13,53 +13,53 @@ Imprima a quantidade mínima de nota(s) e moeda(s) necessárias para trocar o va
 Obs: Utilize ponto (.) para separar a parte decimal.
 """
 
-valor = float(input())
+valor = input().split('.')
+notas = int(valor[0])
+moedas = int(valor[1])
 
 print('NOTAS:')
-n100 = valor // 100
-print('{:.0f} nota(s) de R$ 100.00'.format(n100))
+notas100 = notas // 100
+print('{} nota(s) de R$ 100.00'.format(notas100))
 
-valor = valor - (n100 * 100)
-n50 = valor // 50
-print('{:.0f} nota(s) de R$ 50.00'.format(n50))
+notas = notas - (notas100 * 100)
+notas50 = notas // 50
+print('{} nota(s) de R$ 50.00'.format(notas50))
 
-valor = valor - (n50 * 50)
-n20 = valor // 20
-print('{:.0f} nota(s) de R$ 20.00'.format(n20))
+notas = notas - (notas50 * 50)
+notas20 = notas // 20
+print('{} nota(s) de R$ 20.00'.format(notas20))
 
-valor = valor - (n20 * 20)
-n10 = valor // 10
-print('{:.0f} nota(s) de R$ 10.00'.format(n10))
+notas = notas - (notas20 * 20)
+notas10 =  notas // 10
+print('{} nota(s) de R$ 10.00'.format(notas10))
 
-valor = valor - (n10 * 10)
-n5 = valor // 5
-print('{:.0f} nota(s) de R$ 5.00'.format(n5))
+notas = notas - (notas10 * 10)
+notas5 = notas // 5
+print('{} nota(s) de R$ 5.00'.format(notas5))
 
-valor = valor - (n5 * 5)
-n2 = valor // 2
-print('{:.0f} nota(s) de R$ 2.00'.format(n2))
+notas = notas - (notas5 * 5)
+notas2 = notas // 2
+print('{} nota(s) de R$ 2.00'.format(notas2))
 
 print('MOEDAS:')
-valor = valor - (n2 * 2)
-m1 = valor // 1
-print('{:.0f} moeda(s) de R$ 1.00'.format(m1))
+moedas1 = notas - (notas2 * 2)
+print('{} moeda(s) de R$ 1.00'.format(moedas1))
 
-valor = valor - (m1 * 1)
-m50 = valor // .5
-print('{:.0f} moeda(s) de R$ 0.50'.format(m50))
+moedas50 = moedas // 50
+print('{} moeda(s) de R$ 0.50'.format(moedas50))
 
-valor = valor - (m50 * .5)
-m25 = valor // .25
-print('{:.0f} moeda(s) de R$ 0.25'.format(m25))
+moedas = moedas - (moedas50 * 50)
+moedas25 = moedas // 25
+print('{} moeda(s) de R$ 0.25'.format(moedas25))
 
-valor = valor - (m25 * .25)
-m10 = valor // .1
-print('{:.0f} moeda(s) de R$ 0.10'.format(m10))
+moedas = moedas - (moedas25 * 25)
+moedas10 = moedas // 10
+print('{} moeda(s) de R$ 0.10'.format(moedas10))
 
-valor = valor - (m10 * .10)
-m5 = valor // .05
-print('{:.0f} moeda(s) de R$ 0.05'.format(m5))
+moedas = moedas - (moedas10 * 10)
+moedas5 = moedas // 5
+print('{} moeda(s) de R$ 0.05'.format(moedas5))
 
-valor = valor - (m5 * .05)
-m01 = valor // .01
-print('{:.0f} moeda(s) de R$ 0.01'.format(m01))
+moedas = moedas - (moedas5 * 5)
+moedas1 = moedas // 1
+print('{} moeda(s) de R$ 0.01'.format(moedas1))
