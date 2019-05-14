@@ -15,17 +15,16 @@ O arquivo de entrada contém um número com ponto flutuante qualquer.
 Saída
 A saída deve ser uma mensagem conforme exemplo abaixo.
 '''
-from numpy import arange
 
 valor = float(input())
 
-if valor in arange(0, 25.01, .01):
+if 0 <= valor <= 25:
     print('Intervalo [0,25]')
-elif valor in arange(25.01, 51.1, .01):
+elif 25 < valor <= 50:
     print('Intervalo (25,50]')
-if valor in arange(50.01, 75.1, .01):
+elif 50 < valor <= 75:
     print('Intervalo (50,75]')
-elif valor in arange(75.01, 100.01, .01):
+elif 75 < valor <= 100:
     print('Intervalo (75,100]')
 else:
-    print('Fora de Intervalo')
+    print('Fora de intervalo')
