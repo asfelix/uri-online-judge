@@ -14,10 +14,17 @@ O arquivo de entrada contém um número com ponto flutuante qualquer.
 Saída
 A saída deve ser uma mensagem conforme exemplo abaixo.
 '''
-valor = int(input())
-intervalo1 = list(range(26))
-intervalo2 = list(range:)
-intervalo3 = range(50, 75, 1)
-intervalo4 = range(75, 100, 1)
+from numpy import arange
 
-print(intervalo1)
+valor = float(input())
+
+if valor in arange(0, 25.01, .01):
+    print('Intervalo [0,25]')
+elif valor in arange(25.01, 51.1, .01):
+    print('Intervalo (25,50]')
+if valor in arange(50.01, 75.1, .01):
+    print('Intervalo (50,75]')
+elif valor in arange(75.01, 100.01, .01):
+    print('Intervalo (75,100]')
+else:
+    print('Fora de Intervalo')
