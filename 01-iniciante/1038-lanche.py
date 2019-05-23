@@ -45,3 +45,5 @@ elif prod_cod == 5:
     print('Total: R$ {:.2f}'.format(pedido))
 else:
     print('pedido invalido')
+
+produtos = [{'cod': 1, 'produto':'Cachorro Quente', 'valor': 4}, {'cod': 2, 'produto':'X-Salada', 'valor': 4.5}, {'cod': 3, 'produto':'X-Bacon', 'valor': 5}, {'cod': 4, 'produto':'Torrada simples', 'valor': 2}, {'cod': 5, 'produto':'Refrigerante', 'valor': 1.5}]
