@@ -20,4 +20,4 @@ raio = float(input())
 
 area = n * raio ** 2
 
-print("A={:.4f}" .format(area))
+print("A={:.4f}".format(area))

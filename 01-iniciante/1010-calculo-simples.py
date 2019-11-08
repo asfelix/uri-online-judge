@@ -20,4 +20,4 @@ id_2, qtd_2, value_2 = int(line_2[0]), float(line_2[1]), float(line_2[2])
 
 total = (qtd_1 * value_1) + (qtd_2 * value_2)
 
-print('VALOR A PAGAR: R$ {:.2f}' .format(total))
+print('VALOR A PAGAR: R$ {:.2f}'.format(total))

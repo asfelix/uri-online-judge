@@ -17,4 +17,4 @@ B = int(input())
 
 prod = A * B
 
-print('PROD = {}' .format(prod))
+print('PROD = {}'.format(prod))

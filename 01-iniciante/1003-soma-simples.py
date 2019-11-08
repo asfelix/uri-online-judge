@@ -18,4 +18,4 @@ B = int(input())
 
 soma = A + B
 
-print("SOMA = {}" .format(soma))
+print("SOMA = {}".format(soma))

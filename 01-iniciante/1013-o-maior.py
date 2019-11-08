@@ -20,7 +20,7 @@ A, B, C = int(line[0]), int(line[1]), int(line[2])
 maiorAB = (A + B + abs(A - B)) / 2
 maior = (maiorAB + C + abs(maiorAB - C)) / 2
 
-print('{:.0f} é o maior' .format(maior))
+print('{:.0f} é o maior'.format(maior))
 
 '''
 https://www.geeksforgeeks.org/abs-in-python/

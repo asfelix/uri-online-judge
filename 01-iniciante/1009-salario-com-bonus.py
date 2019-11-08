@@ -21,4 +21,4 @@ sells = float(input())
 commission = sells * .15
 total_salary = fixed_salary + commission
 
-print('TOTAL = R$ {:.2f}' .format(total_salary))
+print('TOTAL = R$ {:.2f}'.format(total_salary))

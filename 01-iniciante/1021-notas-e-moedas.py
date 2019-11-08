@@ -30,7 +30,7 @@ notas20 = notas // 20
 print('{} nota(s) de R$ 20.00'.format(notas20))
 
 notas = notas - (notas20 * 20)
-notas10 =  notas // 10
+notas10 = notas // 10
 print('{} nota(s) de R$ 10.00'.format(notas10))
 
 notas = notas - (notas10 * 10)

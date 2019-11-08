@@ -18,4 +18,4 @@ D = int(input())
 
 diferenca = (A * B - C * D)
 
-print('DIFERENCA = {}' .format(diferenca))
+print('DIFERENCA = {}'.format(diferenca))

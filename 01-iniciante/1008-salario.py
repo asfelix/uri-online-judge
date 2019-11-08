@@ -20,4 +20,4 @@ value = float(input(''))
 
 salario = hours * value
 
-print('NUMBER = {}\nSALARY = U$ {:.2f}' .format(id, salario))
+print('NUMBER = {}\nSALARY = U$ {:.2f}'.format(id, salario))

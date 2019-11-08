@@ -25,4 +25,4 @@ p2 = float(line2[0]), float(line2[1])
 
 distancia: float = sqrt(((p2[0] - p1[0]) ** 2) + ((p2[1] - p1[1]) ** 2))
 
-print('{:.4f}' .format(distancia))
+print('{:.4f}'.format(distancia))
