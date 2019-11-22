@@ -10,14 +10,24 @@ Saída
 Todas as respostas devem ser apresentadas com uma casa decimal. As mensagens devem ser impressas conforme a descrição do problema. Não esqueça de imprimir o enter após o final de cada linha, caso contrário obterá "Presentation Error".
 '''
 
+def media(N1, N2, N3, N4):
+    N1 = N1 * 2
+    N2 = N2 * 3
+    N3 = N3 * 4
+
+    media = (N1 + N2 + N3 + N4) / 4
+
+    return print(media)
+
+media(2.0, 6.5, 4.0, 9.0)
+
 '''
-Resultado no caso de
-Exemplo de entrada
-2.0 4.0 7.5 8.0
-6.4
-'''
+assert 'Média: 5.4' == 2.0 4.0 7.5 8.0 6.4
+
+assert 'Média: 5.4' == 
 print('Média: 5.4')
 print('Aluno em exame.')
 print('Nota do exame: 6.4')
 print('Aluno aprovado.')
 print('Média final: 5.9')
+'''
